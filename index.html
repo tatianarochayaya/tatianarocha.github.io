@@ -537,6 +537,38 @@ section {
   margin-top: 2rem;
 }
 
+
+/* CONSULTAS, ESCRITOS E AÇÕES */
+#consultas { background: var(--claro); }
+.consultas-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+.consulta-card { background:white; border:1px solid #e1d3c2; padding:1.6rem; display:flex; flex-direction:column; }
+.consulta-card.destaque { border:2px solid var(--dourado); box-shadow:0 10px 28px rgba(107,76,53,.10); }
+.consulta-titulo { font-family:'Cormorant Garamond',serif; font-size:1.55rem; color:var(--terra); margin-bottom:.8rem; }
+.consulta-texto { font-size:.92rem; line-height:1.75; color:#584737; }
+.consulta-texto p { margin-bottom:.9rem; }
+.consulta-info { margin-top:auto; padding-top:1rem; color:var(--musgo); font-weight:500; font-size:.82rem; }
+.consulta-acao { display:inline-block; margin-top:1rem; align-self:flex-start; }
+
+.obra-preco { font-size:.8rem; color:var(--musgo); font-weight:500; margin:.7rem 0; }
+.obra-card.destaque { grid-column:span 2; border:2px solid var(--dourado); background:#fffdf9; }
+.obra-selo { display:inline-block; background:var(--musgo); color:white; font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; padding:.25rem .55rem; margin-bottom:.7rem; }
+
+#escritos { background:var(--creme); }
+.escritos-intro { max-width:760px; line-height:1.8; color:#584737; margin-bottom:1.5rem; }
+.escritos-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; }
+.escrito-card { background:white; padding:1.4rem; border-top:2px solid var(--dourado); }
+.escrito-titulo { font-family:'Cormorant Garamond',serif; font-size:1.35rem; color:var(--terra); margin-bottom:.55rem; }
+.escrito-texto { font-size:.88rem; line-height:1.7; color:#6b5948; }
+.escrito-vazio { font-style:italic; color:#8d7a67; }
+
+.whatsapp-flutuante { position:fixed; right:1.2rem; bottom:1.2rem; z-index:120; background:var(--musgo); color:white; text-decoration:none; padding:.8rem 1rem; border-radius:999px; box-shadow:0 5px 18px rgba(0,0,0,.25); font-size:.8rem; font-weight:500; }
+.whatsapp-flutuante:hover { background:var(--terra); }
+
+@media (max-width: 900px) {
+  .consultas-grid, .escritos-grid { grid-template-columns:1fr; }
+  .obra-card.destaque { grid-column:span 1; }
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .hero { grid-template-columns: 1fr; }
@@ -557,9 +589,10 @@ section {
   <a href="#" class="nav-nome">Tatiana Rocha · Yayá</a>
   <ul class="nav-links">
     <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#consultas">Oráculos</a></li>
+    <li><a href="#obras">Livros, cursos e oráculos</a></li>
+    <li><a href="#escritos">Escritos</a></li>
     <li><a href="#musica">Música</a></li>
-    <li><a href="#obras">Obras</a></li>
-    <li><a href="#espiritualidade">Espiritualidade</a></li>
     <li><a href="#botica">Botica</a></li>
     <li><a href="#contato">Contato</a></li>
   </ul>
@@ -579,12 +612,12 @@ section {
     </h1>
     <p class="hero-descricao">
       <strong>Musicista, compositora, escritora, sacerdotisa e oraculista.</strong><br>
-      Mais de duas décadas a serviço das tradições afro-brasileiras, da palavra, da erva e da cura.
+      Há quatro décadas entre oráculos, espiritualidade, palavra, ervas e criação autoral.
       Barão Geraldo, Campinas.
     </p>
     <div class="hero-links">
-      <a href="#espiritualidade" class="btn-primario">Consultas e Vivências</a>
-      <a href="#sobre" class="btn-secundario">Conheça a obra</a>
+      <a href="https://wa.me/5519971552809?text=Ol%C3%A1%2C%20Yay%C3%A1.%20Gostaria%20de%20agendar%20uma%20consulta." class="btn-primario" target="_blank">Agendar consulta</a>
+      <a href="#obras" class="btn-secundario">Livros, cursos e oráculos</a>
     </div>
   </div>
 </section>
@@ -596,14 +629,14 @@ section {
       <div class="sobre-texto">
         <h2 class="secao-titulo">Quem é Yayá</h2>
         <div class="secao-linha"></div>
-        <p>Tatiana Rocha é musicista, compositora, escritora, sacerdotisa de Umbanda e Quimbanda Congo e oraculista. Mais de vinte anos de prática nas tradições afro-brasileiras, com passagem pelo terreiro, pela composição, pela palavra escrita e pela ervologia.</p>
+        <p>Tatiana Rocha é musicista, compositora, escritora, sacerdotisa de Umbanda e Quimbanda Congo e oraculista. Quatro décadas de prática oracular e uma longa trajetória nas tradições afro-brasileiras, com passagem pelo terreiro, pela composição, pela palavra escrita e pela ervologia.</p>
         <p>Trabalha com consultas oraculares individuais, vivências coletivas, formação em ervas sagradas e produção de material de estudo. Sua prática parte do que é vivido, não do que é aprendido nos livros.</p>
         <p>Fundadora da Botica de Yayá, cultiva ervas no quintal de Barão Geraldo e constrói uma casa de cura de barro. Caminha com Cabocla Jurema desde os dezessete anos.</p>
       </div>
       <div class="sobre-numeros">
         <div class="numero-item">
-          <div class="numero-valor">20+</div>
-          <div class="numero-label">anos de prática espiritual</div>
+          <div class="numero-valor">40</div>
+          <div class="numero-label">anos de prática oracular</div>
         </div>
         <div class="numero-item">
           <div class="numero-valor">10</div>
@@ -646,81 +679,134 @@ section {
   </div>
 </section>
 
-<!-- OBRAS -->
+<!-- LIVROS, CURSOS E ORÁCULOS -->
 <section id="obras">
   <div class="container">
-    <h2 class="secao-titulo">Obras</h2>
+    <h2 class="secao-titulo">Livros, cursos e oráculos</h2>
     <div class="secao-linha"></div>
     <div class="obras-grid">
-      <div class="obra-card">
-        <div class="obra-tipo">Livro publicado</div>
-        <div class="obra-titulo">Brigada de Oxalá</div>
-        <div class="obra-desc">Primeiro livro publicado de Tatiana Rocha. Uma obra que nasce da vivência espiritual e da palavra.</div>
-        <a href="https://go.hotmart.com/X106339820O" class="obra-link" target="_blank">Adquirir</a>
-      </div>
-      <div class="obra-card">
-        <div class="obra-tipo">Ebook · Trilogia Saberes da Terra</div>
-        <div class="obra-titulo">O Caminho da Erveira</div>
-        <div class="obra-desc">Formação pessoal e memória do caminho. O primeiro volume da trilogia sobre saberes das ervas.</div>
-        <a href="https://go.hotmart.com/Q105175750V" class="obra-link" target="_blank">Adquirir</a>
-      </div>
-      <div class="obra-card">
-        <div class="obra-tipo">Ebook · Trilogia Saberes da Terra</div>
-        <div class="obra-titulo">As Ervas Sagradas do Quintal</div>
-        <div class="obra-desc">Cultivo, filosofia urbana e prática espiritual das ervas. O quintal como território sagrado.</div>
-        <a href="https://go.hotmart.com/E105175813Q" class="obra-link" target="_blank">Adquirir</a>
-      </div>
-      <div class="obra-card">
+      <div class="obra-card destaque">
+        <span class="obra-selo">Obra principal sobre ervas</span>
         <div class="obra-tipo">Ebook · Trilogia Saberes da Terra</div>
         <div class="obra-titulo">Mironga Verde</div>
-        <div class="obra-desc">Magia prática com ervas. 150+ ervas com nomes científicos, banhos, sabões, pós, óleos, tinturas e amuletos.</div>
-        <a href="https://go.hotmart.com/M105175704J" class="obra-link" target="_blank">Adquirir</a>
+        <div class="obra-desc">O mais completo dos livros de Tatiana Rocha sobre ervas. Reúne um grande repertório de plantas, fundamentos, usos espirituais e práticas de cuidado. Pela extensão do conteúdo, acompanha um guia em HTML para facilitar a consulta.</div>
+        <div class="obra-preco">R$ 57</div>
+        <a href="https://go.hotmart.com/M105175704J?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
       </div>
       <div class="obra-card">
-        <div class="obra-tipo">Ebook · Trilogia completa</div>
+        <div class="obra-tipo">Coleção completa</div>
+        <div class="obra-titulo">Coleção Saberes da Terra</div>
+        <div class="obra-desc">Os quatro livros sobre ervas reunidos em uma coleção para estudo, prática e consulta.</div>
+        <div class="obra-preco">R$ 147</div>
+        <a href="https://go.hotmart.com/N106418780I?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Trilogia</div>
         <div class="obra-titulo">Trilogia Saberes da Terra</div>
-        <div class="obra-desc">Os três volumes da trilogia em um único pacote: O Caminho da Erveira, As Ervas Sagradas do Quintal e Mironga Verde.</div>
-        <a href="https://go.hotmart.com/T106338974X" class="obra-link" target="_blank">Adquirir</a>
+        <div class="obra-desc">O Caminho da Erveira, Ervas Sagradas do Meu Quintal e Mironga Verde reunidos.</div>
+        <div class="obra-preco">R$ 117</div>
+        <a href="https://go.hotmart.com/T106338974X?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
       </div>
       <div class="obra-card">
         <div class="obra-tipo">Almanaque</div>
         <div class="obra-titulo">Almanaque da Erveira</div>
-        <div class="obra-desc">36 ervas sagradas com correspondências elementais e planetárias, memórias da erveira e arquétipos das plantas.</div>
-        <a href="https://go.hotmart.com/V106418063F" class="obra-link" target="_blank">Adquirir</a>
+        <div class="obra-desc">Um guia autoral de consulta sobre ervas, correspondências, usos espirituais e arquétipos vegetais.</div>
+        <div class="obra-preco">R$ 49</div>
+        <a href="https://go.hotmart.com/V106418063F?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Ebook</div>
+        <div class="obra-titulo">O Caminho da Erveira</div>
+        <div class="obra-desc">Para quem deseja aprender a mexer com a terra, cultivar plantas e construir uma relação prática e espiritual com as ervas, mesmo em pequenos espaços.</div>
+        <div class="obra-preco">R$ 47</div>
+        <a href="https://go.hotmart.com/Q105175750V?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Ebook</div>
+        <div class="obra-titulo">Ervas Sagradas do Meu Quintal</div>
+        <div class="obra-desc">Um livro íntimo sobre as plantas cultivadas e utilizadas por Yayá, seus usos e os ensinamentos nascidos da convivência com o quintal.</div>
+        <div class="obra-preco">R$ 37</div>
+        <a href="https://go.hotmart.com/E105175813Q?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Curso online</div>
+        <div class="obra-titulo">Curso Online de Ervas Sagradas</div>
+        <div class="obra-desc">Formação para aprofundar o conhecimento e o uso ritual das ervas sagradas.</div>
+        <div class="obra-preco">R$ 249,99</div>
+        <a href="https://go.hotmart.com/S45343919L?dp=1" class="obra-link" target="_blank">Conhecer o curso</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Livro</div>
+        <div class="obra-titulo">Brigada de Oxalá</div>
+        <div class="obra-desc">Uma obra nascida da vivência espiritual, da música e da palavra.</div>
+        <div class="obra-preco">R$ 20,98</div>
+        <a href="https://go.hotmart.com/X106339820O?dp=1" class="obra-link" target="_blank">Conhecer e comprar</a>
+      </div>
+      <div class="obra-card">
+        <div class="obra-tipo">Projetos autorais</div>
+        <div class="obra-titulo">Oráculos e manuais</div>
+        <div class="obra-desc">O Oráculo das Antigas, o Jogo de Madalena e o Manual do Baralho Cigano integram a produção autoral de Yayá e terão seus lançamentos apresentados aqui.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ESPIRITUALIDADE -->
-<section id="espiritualidade">
+<!-- CONSULTAS ORACULARES -->
+<section id="consultas">
   <div class="container">
-    <h2 class="secao-titulo">Espiritualidade</h2>
+    <h2 class="secao-titulo">Consultas Oraculares</h2>
     <div class="secao-linha"></div>
-    <div class="esp-grid">
-      <div class="esp-card">
-        <div class="esp-card-titulo">Consultas Oraculares</div>
-        <div class="esp-card-texto">Leituras individuais com o Oráculo das Antigas, Vititi Ngombo e outros sistemas. Mais de vinte anos de prática oracular nas tradições de Umbanda e Quimbanda Congo.</div>
-        <a href="#contato" class="obra-link">Agendar consulta</a>
-      </div>
-      <div class="esp-card">
-        <div class="esp-card-titulo">Vivências Coletivas</div>
-        <div class="esp-card-texto">Encontros presenciais no quintal de Barão Geraldo. Rituais com ervas, lavagem de cabeça, trabalho com o oráculo e sabedoria ancestral em grupo.</div>
-        <a href="#contato" class="obra-link">Próximas datas</a>
-      </div>
-      <div class="esp-card">
-        <div class="esp-card-titulo">Formação em Ervas</div>
-        <div class="esp-card-texto">Cursos e materiais sobre o uso ritual e cotidiano das ervas sagradas. Da identificação ao preparo, da proteção ao encantamento.</div>
-        <a href="#obras" class="obra-link">Ver material de estudo</a>
-      </div>
-      <div class="esp-card">
-        <div class="esp-card-titulo">Oráculo de Madalena</div>
-        <div class="esp-card-texto">Sistema oracular original desenvolvido por Yayá com búzios e elementos sagrados. Protocolo próprio nascido da prática com Madalena, sua Pombagira cigana.</div>
-        <a href="#contato" class="obra-link">Saiba mais</a>
-      </div>
+    <div class="consultas-grid">
+      <article class="consulta-card">
+        <h3 class="consulta-titulo">Tarô — Mapeamento e Direcionamento</h3>
+        <div class="consulta-texto">
+          <p>O Tarô é um oráculo de mapeamento da vida. Ajuda a compreender o que está acontecendo no presente, quais forças estão atuando, onde estão os conflitos, as possibilidades, os bloqueios e os movimentos que começam a se desenhar.</p>
+          <p>A leitura pode observar relacionamentos, trabalho, dinheiro, família, saúde emocional, espiritualidade, escolhas e projetos. É especialmente indicada para quem precisa compreender melhor uma situação, avaliar caminhos, tomar decisões ou reconhecer padrões que estão se repetindo.</p>
+          <p>O Tarô não prescreve tratamentos espirituais. Sua função é iluminar o cenário, organizar a percepção e oferecer direcionamento.</p>
+        </div>
+        <div class="consulta-info">Consulta online · R$ 350</div>
+        <a class="btn-primario consulta-acao" target="_blank" href="https://wa.me/5519971552809?text=Ol%C3%A1%2C%20Yay%C3%A1.%20Gostaria%20de%20agendar%20uma%20consulta%20de%20Tar%C3%B4.">Agendar pelo WhatsApp</a>
+      </article>
+
+      <article class="consulta-card">
+        <h3 class="consulta-titulo">Vititi Ngombo — Oráculo Banto</h3>
+        <div class="consulta-texto">
+          <p>O Vititi Ngombo é um oráculo de matriz centro-africana, ligado às tradições espirituais banto e preservado em diferentes linhagens no continente africano e na diáspora.</p>
+          <p>Não é um jogo voltado apenas à previsão do futuro. É um instrumento de investigação espiritual. Mostra o que está atuando sobre uma situação e revela forças favoráveis, bloqueios, interferências, relações ancestrais, responsabilidades, conflitos, riscos e caminhos possíveis.</p>
+          <p>É indicado para situações complexas, repetitivas ou difíceis de compreender. Quando necessário, a leitura pode prescrever cuidados e tratamentos espirituais adequados ao que foi revelado.</p>
+          <p>O Vititi Ngombo é um oráculo profundo e direto. Não trabalha para alimentar fantasias. Trabalha para revelar o terreno, devolver consciência e ajudar a pessoa a se reposicionar diante da própria vida.</p>
+        </div>
+        <div class="consulta-info">Consulta online · R$ 350</div>
+        <a class="btn-primario consulta-acao" target="_blank" href="https://wa.me/5519971552809?text=Ol%C3%A1%2C%20Yay%C3%A1.%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Vititi%20Ngombo.">Agendar pelo WhatsApp</a>
+      </article>
+
+      <article class="consulta-card destaque">
+        <h3 class="consulta-titulo">Oráculo das Antigas</h3>
+        <div class="consulta-texto">
+          <p>O Oráculo das Antigas é um sistema autoral criado por Tatiana Rocha a partir da força das grandes Matriarcas, das Divindades femininas e das Entidades que atravessam a vida espiritual brasileira.</p>
+          <p>Seu panteão é formado por dezesseis Divindades, entre Orixás femininos, Iyami e forças ancestrais. Ao lado delas estão dez Entidades representativas da cultura espiritual da Umbanda, como Cabocla, Preta Velha, Menina, Marinheira, Boiadeira, Baiana, Cigana, Pombagira, Malandra e Pombagira Mirim.</p>
+          <p>Nasceu de décadas de experiência com oráculos, ervas, terreiro, espiritualidade e escuta. Não é adaptação de nenhum baralho tradicional. Possui linguagem, estrutura e caminho próprios.</p>
+          <p>Sua leitura observa diferentes dimensões da vida ao mesmo tempo. Por isso, não responde apenas a uma pergunta isolada. Mostra a arquitetura do momento vivido.</p>
+          <p>Revela o que está se formando, o que já se instalou, o que pede encerramento e o que precisa ser fortalecido. Quando o jogo aponta que determinado campo necessita de cuidado, a leitura pode indicar caminhos de intervenção, atitudes, ervas e procedimentos espirituais adequados ao que foi revelado.</p>
+        </div>
+        <div class="consulta-info">Consulta online · R$ 350</div>
+        <a class="btn-primario consulta-acao" target="_blank" href="https://wa.me/5519971552809?text=Ol%C3%A1%2C%20Yay%C3%A1.%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Or%C3%A1culo%20das%20Antigas.">Agendar pelo WhatsApp</a>
+      </article>
     </div>
-    <div class="destaque-frase">
-      <p>"O oráculo não é ferramenta de adivinhação. É ferramenta de governo."</p>
+  </div>
+</section>
+
+<!-- ESCRITOS -->
+<section id="escritos">
+  <div class="container">
+    <h2 class="secao-titulo">Escritos de Yayá</h2>
+    <div class="secao-linha"></div>
+    <p class="escritos-intro">Um espaço para textos sobre ervas, espiritualidade, oráculos, memória, terreiro, cotidiano e os caminhos de uma mulher que escreve a partir do que vive.</p>
+    <div class="escritos-grid">
+      <article class="escrito-card">
+        <h3 class="escrito-titulo">Novos textos em breve</h3>
+        <p class="escrito-texto escrito-vazio">Esta seção foi criada para receber publicações novas e manter o site vivo. Cada texto poderá ter seu próprio endereço para ser compartilhado.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -734,7 +820,7 @@ section {
         <div class="secao-linha"></div>
         <p>Produtos artesanais naturais feitos com ervas cultivadas no quintal de Barão Geraldo. Sabões, óleos, banhos, tinturas e preparos rituais com intenção, conhecimento e cuidado.</p>
         <p>A Botica nasce do mesmo lugar que tudo que Yayá faz: da relação direta com a terra, com as plantas e com a tradição vivida.</p>
-        <a href="#contato" class="btn-primario" style="display:inline-block; margin-top:1rem;">Encomendar</a>
+        <a href="https://wa.me/5519971552809?text=Ol%C3%A1%2C%20Yay%C3%A1.%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Botica." class="btn-primario" style="display:inline-block; margin-top:1rem;" target="_blank">Falar sobre a Botica</a>
       </div>
       <div class="botica-produtos">
         <div class="produto-item">
@@ -798,5 +884,6 @@ section {
   </div>
 </section>
 
+<a class="whatsapp-flutuante" href="https://wa.me/5519971552809" target="_blank" aria-label="Falar com Yayá pelo WhatsApp">WhatsApp</a>
 </body>
 </html>

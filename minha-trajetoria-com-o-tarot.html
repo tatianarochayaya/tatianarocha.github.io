@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha trajetória com o Tarô | Tatiana Rocha</title>
+<meta name="description" content="Dos primeiros jogos ainda menina, na explosão mediúnica, ao estudo autodidata desde o início dos anos 80. Tatiana Rocha conta mais de quarenta anos de relação com o Tarô, e por que ele nunca pode virar muleta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --terra:#6B4C35;
+    --musgo:#4A5C3F;
+    --dourado:#A8865A;
+    --creme:#F5F0E8;
+    --escuro:#2A1F15;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--terra);}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+
+  header.hero{
+    padding:72px 24px 56px;
+    border-bottom:1px solid rgba(107,76,53,0.18);
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--dourado);
+    margin-bottom:22px;
+  }
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(34px, 6vw, 50px);
+    line-height:1.15;
+    color:var(--escuro);
+    max-width:640px;
+    margin:0 auto 22px;
+  }
+  .lede{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:20px;
+    color:var(--terra);
+    max-width:540px;
+    margin:0 auto;
+  }
+  .byline{
+    margin-top:28px;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--escuro);
+    opacity:0.6;
+  }
+
+  section.intro{padding:56px 0 8px;}
+  section.intro p{font-size:18px;margin-bottom:20px;}
+
+  article.fase{
+    padding:52px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+  }
+  article.fase .num{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:14px;
+    color:var(--dourado);
+    letter-spacing:0.08em;
+    margin-bottom:10px;
+  }
+  article.fase h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(26px, 4.5vw, 34px);
+    color:var(--escuro);
+    margin-bottom:20px;
+  }
+  article.fase p{font-size:17px;margin-bottom:18px;}
+  article.fase .voice{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--musgo);
+    background:rgba(74,92,63,0.06);
+    padding:20px 24px;
+    border-radius:2px;
+    margin:26px 0;
+  }
+
+  section.hoje{
+    background:var(--escuro);
+    color:var(--creme);
+    margin:0 -24px;
+    padding:64px 24px;
+  }
+  section.hoje .wrap{max-width:680px;}
+  section.hoje h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(28px, 5vw, 36px);
+    margin-bottom:24px;
+    color:var(--creme);
+  }
+  section.hoje p{font-size:17px;margin-bottom:20px;color:rgba(245,240,232,0.92);}
+
+  section.linkback{
+    padding:56px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+    text-align:center;
+  }
+  section.linkback p{font-size:17px;margin-bottom:20px;}
+  .btn-outline{
+    display:inline-block;
+    border:1px solid var(--terra);
+    color:var(--terra);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:999px;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  .btn-outline:hover{background:var(--terra);color:var(--creme);}
+
+  section.cta{
+    padding:64px 24px 88px;
+    text-align:center;
+    background:var(--musgo);
+    color:var(--creme);
+    margin:0 -24px -1px;
+  }
+  section.cta .wrap{max-width:520px;}
+  section.cta h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:30px;
+    margin-bottom:18px;
+  }
+  section.cta p{font-size:16px;opacity:0.9;margin-bottom:32px;}
+  .btn-whats{
+    display:inline-block;
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    letter-spacing:0.04em;
+    text-decoration:none;
+    padding:16px 36px;
+    border-radius:999px;
+    transition:transform 0.2s ease;
+  }
+  .btn-whats:hover{transform:translateY(-2px);}
+
+  footer{
+    text-align:center;
+    padding:32px 24px;
+    font-size:12px;
+    color:var(--escuro);
+    opacity:0.5;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Trajetória pessoal</div>
+  <h1>Minha trajetória com o Tarô</h1>
+  <p class="lede">Mais de quarenta anos de relação com um baralho que começou como dom e virou disciplina.</p>
+  <p class="byline">Por Tatiana Rocha — Mameto Nganga Musekedi</p>
+</header>
+
+<div class="wrap">
+  <section class="intro">
+    <p>Comecei a jogar Tarô quando eu era muito menina ainda. Foi durante minha explosão mediúnica: uma das coisas que aconteciam comigo com muita facilidade era pegar as cartas de um baralho comum e fazer leituras. Vinha fácil, sem esforço, como se já soubesse.</p>
+  </section>
+</div>
+
+<article class="fase">
+  <div class="wrap">
+    <div class="num">O susto</div>
+    <h2>Quando o dom parou de bastar</h2>
+    <p>Quando esse processo mediúnico se estabilizou, achei que conseguiria continuar fazendo as leituras do mesmo jeito. Não aconteceu. Foi bastante estranho pra mim, porque entendi ali que eu precisava estudar. O que me interessou, naquela época, foi o Tarô.</p>
+    <p>Sou autodidata. Comecei a estudar Tarô no começo dos anos oitenta, e durante todo esse tempo ele me serve como grande companheiro, um orientador. Já perdi as contas de quantas leituras fiz, das pessoas, nesse tempo todo.</p>
+  </div>
+</article>
+
+<article class="fase">
+  <div class="wrap">
+    <div class="num">O paralelo</div>
+    <h2>Minha mãe e o baralho cigano</h2>
+    <p>Paralelamente, naquela época, minha mãe jogava um baralho cigano de tradição brasileira, e eu jogava o Tarô. No começo eu ainda não trabalhava profissionalmente com ele. Ele me servia pra me ajudar, me orientar.</p>
+  </div>
+</article>
+
+<article class="fase">
+  <div class="wrap">
+    <div class="num">A lição</div>
+    <h2>Tarô não pode ser muleta</h2>
+    <p>Me perdi muito tempo. Entendi que a gente não pode ficar utilizando o Tarô o tempo inteiro pra pequenas soluções ou pequenas resoluções na vida. Entendi que Tarô não pode ser muleta. Ele é um instrumento que nos ajuda, mas eu não posso basear minhas decisões somente nisso.</p>
+    <div class="voice">Isso foi um processo de aprendizado muito louco.</div>
+    <p>Hoje, com 59 anos, interpreto o Tarô bem diferente de quando eu tinha 18. Quarenta anos atrás eu era outra pessoa, o mundo era outro. E a gente tem que entender isso também: estamos num momento de grandes transformações sociais, e nossa leitura precisa se adaptar ao nosso tempo.</p>
+    <p>Hoje, minha leitura do Tarô não busca entregar respostas prontas ou substituir a escolha de quem consulta. O Tarô é uma linguagem simbólica que ajuda a revelar movimentos, possibilidades, conflitos e caminhos que muitas vezes ainda não conseguimos perceber com clareza. Cada leitura é um encontro entre as cartas, a história da pessoa e o momento que ela está vivendo.</p>
+  </div>
+</article>
+
+<section class="hoje">
+  <div class="wrap">
+    <h2>O que carrego disso hoje</h2>
+    <p>Mais de quatro décadas depois daquelas primeiras cartas na mão de uma menina, o Tarô continua comigo, mas atravessado por tudo o que aprendi no caminho: que ele orienta, não decide por você; que ler é também uma forma de escutar o tempo em que se vive; e que toda leitura carrega, além do baralho, a pessoa que está do outro lado dele.</p>
+    <p>É esse Tarô, lapidado por décadas de estudo e de vida, que ofereço hoje nas consultas.</p>
+  </div>
+</section>
+
+<section class="linkback">
+  <div class="wrap">
+    <p>Quer entender melhor como o Tarô se compara aos outros sistemas oraculares que trabalho? O Guia dos Oráculos reúne Tarô, Vititi Ngombo, Oráculo das Antigas e outros, lado a lado.</p>
+    <a class="btn-outline" href="guia-dos-oraculos.html">Conhecer o Guia dos Oráculos →</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Se sentir o chamado</h2>
+    <p>Será um prazer te acompanhar nesse processo.</p>
+    <a class="btn-whats" href="https://wa.me/5519971552809" target="_blank" rel="noopener">Agendar consulta pelo WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  Tatiana Rocha · Casa das Antigas — escola de espiritualidade e saberes ancestrais
+</footer>
+
+</body>
+</html>

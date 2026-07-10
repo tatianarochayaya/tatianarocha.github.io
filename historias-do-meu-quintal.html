@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Histórias do meu quintal | Tatiana Rocha</title>
+<meta name="description" content="Crônica de Tatiana Rocha sobre sua chegada a Barão Geraldo, em abril de 2010 — a casa nova, o quintal, as primeiras plantas, e o começo de tudo que viria a se tornar a Casa das Antigas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --terra:#6B4C35;
+    --musgo:#4A5C3F;
+    --dourado:#A8865A;
+    --creme:#F5F0E8;
+    --escuro:#2A1F15;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+  a{color:var(--terra);}
+  .wrap{max-width:660px;margin:0 auto;padding:0 24px;}
+
+  header.hero{
+    padding:72px 24px 48px;
+    border-bottom:1px solid rgba(107,76,53,0.18);
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--dourado);
+    margin-bottom:22px;
+  }
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(34px, 6vw, 48px);
+    line-height:1.15;
+    color:var(--escuro);
+    max-width:600px;
+    margin:0 auto 22px;
+  }
+  .lede{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--terra);
+    max-width:520px;
+    margin:0 auto;
+  }
+  .byline{
+    margin-top:28px;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--escuro);
+    opacity:0.6;
+  }
+
+  article.cronica{
+    padding:56px 0;
+  }
+  article.cronica p{
+    font-size:18px;
+    margin-bottom:20px;
+    font-family:'Cormorant Garamond', serif;
+    color:var(--escuro);
+  }
+  article.cronica p:first-of-type::first-letter{
+    font-size:3.2em;
+    float:left;
+    line-height:0.85;
+    padding-right:10px;
+    padding-top:4px;
+    color:var(--terra);
+    font-weight:600;
+  }
+
+  .separador{
+    text-align:center;
+    margin:40px 0;
+    color:var(--dourado);
+    font-size:20px;
+    letter-spacing:0.3em;
+    opacity:0.6;
+    user-select:none;
+  }
+
+  .assinatura{
+    text-align:right;
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid rgba(107,76,53,0.18);
+  }
+  .assinatura .nome{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:24px;
+    color:var(--terra);
+  }
+  .assinatura .contexto{
+    font-size:13px;
+    color:var(--escuro);
+    opacity:0.65;
+    margin-top:6px;
+  }
+
+  .protecao-nota{
+    text-align:center;
+    font-size:12px;
+    color:var(--escuro);
+    opacity:0.45;
+    padding:0 24px 40px;
+  }
+
+  section.linkback{
+    padding:56px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+    text-align:center;
+  }
+  section.linkback p{font-size:17px;margin-bottom:20px;}
+  .btn-outline{
+    display:inline-block;
+    border:1px solid var(--terra);
+    color:var(--terra);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:999px;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  .btn-outline:hover{background:var(--terra);color:var(--creme);}
+
+  section.cta{
+    padding:64px 24px 88px;
+    text-align:center;
+    background:var(--musgo);
+    color:var(--creme);
+    margin:0 -24px -1px;
+  }
+  section.cta .wrap{max-width:520px;}
+  section.cta h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:30px;
+    margin-bottom:18px;
+  }
+  section.cta p{font-size:16px;opacity:0.9;margin-bottom:32px;}
+  .btn-whats{
+    display:inline-block;
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    letter-spacing:0.04em;
+    text-decoration:none;
+    padding:16px 36px;
+    border-radius:999px;
+    transition:transform 0.2s ease;
+    user-select:text;
+  }
+  .btn-whats:hover{transform:translateY(-2px);}
+
+  footer{
+    text-align:center;
+    padding:32px 24px;
+    font-size:12px;
+    color:var(--escuro);
+    opacity:0.5;
+  }
+</style>
+</head>
+<body oncontextmenu="return false;">
+
+<header class="hero">
+  <div class="eyebrow">Crônica · Escritos de Yayá</div>
+  <h1>Histórias do meu quintal</h1>
+  <p class="lede">Abril de 2010. A chegada a Barão Geraldo, a casa que mudou minha relação com a terra — e onde, sem eu ainda saber, o terreiro começava a nascer.</p>
+  <p class="byline">Por Tatiana Rocha — Mameto Nganga Musekedi</p>
+</header>
+
+<div class="wrap">
+  <article class="cronica">
+
+    <p>No mês do meu aniversário cá estou eu abrindo o portão da nova casa, como quem adentra em uma nova vida.</p>
+
+    <p>E é mesmo.</p>
+
+    <p>Ninguém estava acreditando que eu conseguiria alugar alguma coisa em Barão Geraldo. Aluguéis exorbitantes, especulação imobiliária sangrenta, estudantes dispostos a se juntar em bandos e dividir morada só para usufruir esse sotaque de interior no meio de uma cidade grande.</p>
+
+    <p>Minha rua é tranquila e bem na frente do portão de casa tem uma árvore imensa, com seus frutinhos vermelho e preto, fazendo sombra generosa e destruindo a calçada com aquelas raízes tortas.</p>
+
+    <p>Não faço a mínima ideia árvore seja essa, mas achei muito legal ter uma guardiã assentada bem na minha porta. Um bom presságio.</p>
+
+    <p>Portão é todo vasado, com aqueles tubinhos que um dia foram brancos. Hoje tem charmosas manchinhas. Meu portão é sardento e eu acho ele lindo.</p>
+
+    <p>Quando eu entrei pela primeira vez aqui o que mais me encantou foi o tamanho do terreno. Imenso! Contei exatos 49 passos da entrada da rua até à varanda. Um caminho feito de cimento, sem garagem coberta. Meu carrinho vai ter que dormir ao relento. Depois eu faço uma cobertura, não tem problema.</p>
+
+    <p>Do lado direito tem umas bananeiras e eu fiquei absurdamente emocionada com isso. Casa com bananeira lembra a casa de minha avó materna, lá na Baixada Fluminense. Já me vendo com um lenço na cabeça, aventalcompridão, mexendo um tacho de cobre com uma imensa colher de pau fazendo a mais deliciosa bananada do mundo. Não, não tenho a mínima ideia de como se faz bananada, mas quando a gente sonha não pensa nesses detalhes.</p>
+
+    <p>Mais a frente, ainda à direita tem um pé de acerola e um de goiaba, que faz uma sombra boa. Vai ser ali que o carro vai ficar, certamente.</p>
+
+    <p>Do lado esquerdo uma outra árvore imensa e as folhas cheiram muito bem. Nem imagino o que seja mas ela me parece a árvore mais digna do terreno todo e, instintivamente, fui lá bater cabeça no seu tronco e pedir permissão para entrar. Abracei a árvore e rezei. Tive aquela impressão de abraçar alguém, cheio de amor pra distribuir, e esse alguém ficar duro, meio sem jeito, sem retribuir ao abraço. Pelo jeito a Árvore Senhora é meio marrenta. Tudo bem, com o tempo cativo ela.</p>
+
+    <p>Mais à frente outro pé de acerola e quase na varanda outra árvore, que pelos espinhos deve ser ou limão ou tangerina. Tá horrível, toda sequinha, coitada. Vou lá dar outro abraço e logo de cara levo uma furada bem dada no ombro. Parece que ela me dizia "deixe de bicho-grilece, mulher" e meu ataque de amor arbóreo passou na hora.</p>
+
+    <p>Tem muito espaço aqui e por todos os espaços vazios existe mato.</p>
+
+    <p>Se tem mato tem bicho. Melhor ficar esperta.</p>
+
+    <p>Agora é arregaçar as mangas e começar a faxina pra receber os móveis.</p>
+
+    <div class="separador">✦ ❦ ✦</div>
+
+    <p>Ano novo. Vida nova mesmo!</p>
+
+    <p>O dia da mudança foi cansativo.</p>
+
+    <p>Vim com os cachorros dentro do carro, pisando nas coisas mais frágeis que eu achei que estariam mais seguras indo comigo, dentro do carro.</p>
+
+    <p>O cara do carreto é uma figura estranhíssima. Tem um lenço amarrado na cabeça, tipo motoqueiro quarentão e uso pochete. Já impliquei com o cara. Ferrou de vez quando ele me disse que não podia fazer força por causa de um problema nas costas, na coluna. Tinha alguma coisa no nervo ciático, um bico de papagaio frágil, a espinhela caída, sei lá o que o cara tinha. Só sei que ele e o ajudante deixaram as coisas todas socadas na sala e eu tive que, sozinha, botar tudo no lugar: geladeira, fogão, mesa de cozinha, caixas e mais caixas.</p>
+
+    <p>Trabalhei como uma louca e consegui deixar tudo mais ou menos em ordem para a primeira noite na casa nova.</p>
+
+    <p>Não sei se foi o cansaço, mas dormi pesado e acordei no outro dia com o sol bem no meio da minha cara.</p>
+
+    <p>Meu primeiro café da manhã foi sentada na varanda olhando o dia que esquentava lentamente. Tem um monte de maritaca que berra adoidado aqui, voando da goiabeira para o telhado do vizinho. Os cachorros ficaram loucos com isso e a manhã começa a ficar bem barulhenta. Até acostumarem vai ser um pequeno inferno.</p>
+
+    <p>Descobri que tem uma imensa moita de citronela bem de baixo do varal, ao lado da varanda do quarto. Muito útil pra espantar mosquito. Outra coisa que me impressionou foi a quantidade de varal. Pra que tanto varal, Deus meu?</p>
+
+    <p>E foi assim, olhando a citronela, debaixo do varal, que descobri que a casa tem mais moradores: formigas.</p>
+
+    <p>Formiga pra todo o lado.</p>
+
+    <p>Não sei se faz bem para as energias quando, no primeiro dia da casa nova, se pensa em formicida e morte em massa.</p>
+
+    <p>Mas entre elas e eu, acho que tenho mais chances de vencer essa batalha.</p>
+
+    <p>Alguém, por favor, sabe onde se aluga um tamanduá???</p>
+
+    <p>Não é à toa que o pé de tangerina (sim, descobri o que era) está tão feio. Tem um formigueiro enorme bem nas raízes.</p>
+
+    <p>Fico imaginando se a casa não pode ruir, caso o formigueiro seja muito grande e se estenda por todo o quintal, uma cidade subterrânea de formigas. Com a quantidade de tralha que eu trouxe na mudança, o piso pode não aguentar o peso e afundar e eu, um dia acordo, mortinha da silva, devorada por formigas carnívoras, típicas das terras barãogeraldenses.</p>
+
+    <p>Poxa vida, que morte sem glamour!</p>
+
+    <p>Me perdoe os ativistas mas desejo morte total a todas as formigas do mundo.</p>
+
+    <p>Não sei se é perverso demais, mas soquei água quente no formigueiro.</p>
+
+    <p>As formigas, nem tchun pra isso. Estão todas lá embaixo fazendo escalda-pés.</p>
+
+    <p>Que ódio!</p>
+
+    <p>Descobri na internet que cravo pode ser bom para dar fim no formigueiro.</p>
+
+    <p>Para garantir, joguei dois quilos de cravo lá.</p>
+
+    <p>Depois joguei o restinho de gergelim meio velho que tinha em casa. Parece que as formigas adoram gergelim mas não sabem que o mofo que dá nele é o fim para sua espécie. Mata o miolo, mata de dentro pra fora, mata a Rainha.</p>
+
+    <p>Nunca imaginei que morar com tanta terra desabroxasse na gente esse instinto assassino.</p>
+
+    <p>Continuo firme na empreitada.</p>
+
+    <div class="separador">✦ ❦ ✦</div>
+
+    <p>Tive que chamar um cara pra vir capinar o quintal.</p>
+
+    <p>O mato é tanto os cachorros somem no meio deles!</p>
+
+    <p>Seu Sebastião bateu aqui no portão perguntando pela antiga moradora e me dizendo que sempre capinava aqui, deixava tudo lindo, limpinho, e que agora estava muito feio e que, se eu quisesse, ele daria um jeito.</p>
+
+    <p>Negociamos um preço e ele veio no outro dia com uma carroça puxada por um cavalo magricela e uma máquina que pendura no corpo e vai cortando o mato bem rente ao chão.</p>
+
+    <p>Os cachorros ficaram histéricos com o cavalo, que nem dava bola pra eles. Mas quando Tila atacou pra valer, vi um coice acertar o nada e fiquei realmente preocupada. Tive que prender os cachorros e eles estranharam bastante.</p>
+
+    <p>Sebastião é meio surdo e eu tenho que ficar repetindo as coisas, cada vez mais alto. Ficou muito impressionado com a brabeza dos cães. Melhor mesmo que ache que tenho cães perigosíssimos e que a casa é muito bem protegida.</p>
+
+    <p>Ele é meio surdo, mas de mudo não tem nada. Fala sem parar, conta tudo que sabia dos antigos moradores, as fofocas do bairro, e já me considera amiga de infância.</p>
+
+    <p>Achei muito interessante ele trazer sua própria garrafa de café e a marmita. Dele e a do cavalo.</p>
+
+    <p>Nunca tinha visto isso. Achei bonito.</p>
+
+    <p>Agora meu quintal tá capinado e eu me sinto bem mais civilizada.</p>
+
+    <p>Sebastião disse que a cada quinze dias vem aqui dar um trato em tudo, e eu contabilizo isso na minha cabeça e penso que to ferrada.</p>
+
+    <p>As cachorras descobriram que é uma delícia deitar na moita de citronela. Cacau chega a bufar de satisfação.</p>
+
+    <p>Pressinto que a citronela está com dias contados.</p>
+
+    <p>Por que diabos uma pessoa jogaria milhões de britas na terra?</p>
+
+    <p>Pois foi isso que o antigo morador fez, acho que na tentativa de segurar o crescimento do mato do pedaço de terra bem do lado da varanda.</p>
+
+    <p>Até parece que mato não arranja espaço entre as pedras pra crescer.</p>
+
+    <p>Quando Sebastião vem limpar o quintal voa pedrinha pra todo o lado e hoje o vidro da porta da cozinha tem um lindo buraco no vidro.</p>
+
+    <p>Povo estranho, esse que morava aqui. Mania de varal e de pedrinha.</p>
+
+    <p>Vai entender.</p>
+
+    <div class="separador">✦ ❦ ✦</div>
+
+    <p>A pobre citronela não morreu em vão.</p>
+
+    <p>Suas folhas secas são ótimas pra defumar a casa e espantar os mosquitos.</p>
+
+    <p>Quando jogo a erva esturricada no carvão, sobe tanta fumaça, mas tanta fumaça, que ajudo todo o quarteirão a se manter livre da dengue!</p>
+
+    <p>Só não tenho onde guardar tanta citronela.</p>
+
+    <p>O jeito foi pendurar nos caibros da varanda e a casa toda está perfumada.</p>
+
+    <p>Me sinto muito camponesa.</p>
+
+    <div class="assinatura">
+      <div class="nome">Tatiana Rocha</div>
+      <div class="contexto">Barão Geraldo, abril de 2010 — o início de tudo</div>
+    </div>
+
+  </article>
+</div>
+
+<p class="protecao-nota">© Texto autoral de Tatiana Rocha. Reprodução não autorizada.</p>
+
+<section class="linkback">
+  <div class="wrap">
+    <p>Foi nesse quintal, entre citronelas e formigueiros, que a relação com a terra que hoje sustenta a Casa das Antigas começou a se enraizar.</p>
+    <a class="btn-outline" href="banho-de-ervas.html">Ler sobre banho de ervas →</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Se sentir o chamado</h2>
+    <p>Será um prazer te acompanhar nesse processo.</p>
+    <a class="btn-whats" href="https://wa.me/5519971552809" target="_blank" rel="noopener">Agendar consulta pelo WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  Tatiana Rocha · Casa das Antigas — escola de espiritualidade e saberes ancestrais
+</footer>
+
+<script>
+  document.addEventListener('copy', function(e){ e.preventDefault(); });
+  document.addEventListener('cut', function(e){ e.preventDefault(); });
+  document.addEventListener('selectstart', function(e){
+    if (e.target.closest('.btn-whats') || e.target.closest('.btn-outline') || e.target.closest('.btn-livro')) return;
+    e.preventDefault();
+  });
+</script>
+
+</body>
+</html>

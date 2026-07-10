@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia dos Oráculos: Tarô, Merindilogum, Vititi Ngombo, Oráculo das Antigas e Baralho Cigano | Tatiana Rocha</title>
+<meta name="description" content="Entenda a diferença entre Tarô, Merindilogum, Vititi Ngombo, Oráculo das Antigas e Baralho Cigano. Guia completo escrito por Tatiana Rocha, sacerdotisa e oraculista com mais de três décadas de tradição.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --terra:#6B4C35;
+    --musgo:#4A5C3F;
+    --dourado:#A8865A;
+    --creme:#F5F0E8;
+    --escuro:#2A1F15;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  body{
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-weight:300;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--terra);}
+
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    padding:72px 24px 56px;
+    border-bottom:1px solid rgba(107,76,53,0.18);
+    text-align:center;
+  }
+
+  .eyebrow{
+    font-family:'Jost', sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--dourado);
+    margin-bottom:22px;
+  }
+
+  h1{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(34px, 6vw, 52px);
+    line-height:1.15;
+    color:var(--escuro);
+    max-width:620px;
+    margin:0 auto 22px;
+  }
+
+  .lede{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:20px;
+    color:var(--terra);
+    max-width:520px;
+    margin:0 auto;
+  }
+
+  .byline{
+    margin-top:28px;
+    font-size:13px;
+    letter-spacing:0.04em;
+    color:var(--escuro);
+    opacity:0.6;
+  }
+
+  /* ---------- INTRO ---------- */
+  section.intro{
+    padding:56px 0 8px;
+  }
+
+  section.intro p{
+    font-size:18px;
+    margin-bottom:20px;
+  }
+
+  .thesis{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:24px;
+    color:var(--musgo);
+    border-left:2px solid var(--dourado);
+    padding-left:22px;
+    margin:36px 0;
+  }
+
+  /* ---------- NAV DOTS (jump list) ---------- */
+  nav.map{
+    padding:8px 0 48px;
+  }
+  nav.map ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+  }
+  nav.map a{
+    display:inline-block;
+    font-size:13px;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    color:var(--terra);
+    border:1px solid rgba(107,76,53,0.35);
+    border-radius:999px;
+    padding:8px 16px;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  nav.map a:hover{
+    background:var(--terra);
+    color:var(--creme);
+  }
+
+  /* ---------- ORACLE SECTIONS ---------- */
+  article.oracle{
+    padding:56px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+  }
+
+  article.oracle .num{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:14px;
+    color:var(--dourado);
+    letter-spacing:0.08em;
+    margin-bottom:10px;
+  }
+
+  article.oracle h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:clamp(28px, 5vw, 38px);
+    color:var(--escuro);
+    margin-bottom:24px;
+  }
+
+  article.oracle p{
+    font-size:17px;
+    margin-bottom:20px;
+  }
+
+  article.oracle .voice{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--musgo);
+    background:rgba(74,92,63,0.06);
+    padding:20px 24px;
+    border-radius:2px;
+    margin:28px 0;
+  }
+
+  article.oracle .note{
+    font-size:15px;
+    color:var(--terra);
+    opacity:0.85;
+    margin-top:24px;
+  }
+
+  article#antigas{
+    background:var(--escuro);
+    color:var(--creme);
+    margin:0 -24px;
+    padding:64px 24px;
+    border-top:none;
+  }
+  article#antigas .wrap{max-width:680px;}
+  article#antigas h2{color:var(--creme);}
+  article#antigas .num{color:var(--dourado);}
+  article#antigas p{color:rgba(245,240,232,0.92);}
+  article#antigas .voice{
+    background:rgba(168,134,90,0.15);
+    color:#EADFC9;
+  }
+
+  /* ---------- TABLE ---------- */
+  section.table-wrap{
+    padding:56px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+  }
+
+  section.table-wrap h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:30px;
+    margin-bottom:28px;
+    text-align:center;
+  }
+
+  .compare{
+    width:100%;
+    border-collapse:collapse;
+    font-size:15px;
+  }
+
+  .compare th{
+    font-family:'Jost', sans-serif;
+    font-weight:500;
+    text-align:left;
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--dourado);
+    border-bottom:1px solid rgba(107,76,53,0.3);
+    padding:0 12px 12px 0;
+  }
+
+  .compare td{
+    padding:16px 12px 16px 0;
+    border-bottom:1px solid rgba(107,76,53,0.15);
+    vertical-align:top;
+  }
+
+  .compare td.name{
+    font-family:'Cormorant Garamond', serif;
+    font-size:19px;
+    color:var(--escuro);
+    white-space:nowrap;
+  }
+
+  /* mobile: stack table */
+  @media(max-width:600px){
+    .compare thead{display:none;}
+    .compare, .compare tbody, .compare tr, .compare td{display:block;width:100%;}
+    .compare tr{
+      border-bottom:1px solid rgba(107,76,53,0.25);
+      padding:18px 0;
+    }
+    .compare td{border:none;padding:4px 0;}
+    .compare td.name{font-size:21px;}
+    .compare td:before{
+      content:attr(data-label);
+      display:block;
+      font-family:'Jost', sans-serif;
+      font-size:11px;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      color:var(--dourado);
+      margin-top:6px;
+    }
+    .compare td.name:before{content:none;}
+  }
+
+  /* ---------- FAQ ---------- */
+  section.faq{
+    padding:56px 0;
+    border-top:1px solid rgba(107,76,53,0.18);
+  }
+
+  section.faq h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-size:30px;
+    margin-bottom:32px;
+    text-align:center;
+  }
+
+  details{
+    border-bottom:1px solid rgba(107,76,53,0.2);
+    padding:18px 0;
+  }
+
+  summary{
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    color:var(--escuro);
+    cursor:pointer;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+  }
+
+  summary::-webkit-details-marker{display:none;}
+
+  summary:after{
+    content:"+";
+    font-family:'Jost', sans-serif;
+    font-size:22px;
+    color:var(--dourado);
+    flex-shrink:0;
+    transition:transform 0.2s ease;
+  }
+
+  details[open] summary:after{
+    transform:rotate(45deg);
+  }
+
+  details p{
+    font-size:16px;
+    margin-top:14px;
+    color:var(--escuro);
+    opacity:0.9;
+  }
+
+  /* ---------- CTA ---------- */
+  section.cta{
+    padding:64px 24px 88px;
+    text-align:center;
+    background:var(--musgo);
+    color:var(--creme);
+    margin:0 -24px -1px;
+  }
+
+  section.cta .wrap{max-width:520px;}
+
+  section.cta h2{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    font-style:italic;
+    font-size:30px;
+    margin-bottom:18px;
+  }
+
+  section.cta p{
+    font-size:16px;
+    opacity:0.9;
+    margin-bottom:32px;
+  }
+
+  .btn-whats{
+    display:inline-block;
+    background:var(--creme);
+    color:var(--escuro);
+    font-family:'Jost', sans-serif;
+    font-size:14px;
+    letter-spacing:0.04em;
+    text-decoration:none;
+    padding:16px 36px;
+    border-radius:999px;
+    transition:transform 0.2s ease;
+  }
+  .btn-whats:hover{transform:translateY(-2px);}
+
+  footer{
+    text-align:center;
+    padding:32px 24px;
+    font-size:12px;
+    color:var(--escuro);
+    opacity:0.5;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Guia de espiritualidade e saberes ancestrais</div>
+  <h1>Tarô, Merindilogum, Vititi Ngombo, Oráculo das Antigas e Baralho Cigano</h1>
+  <p class="lede">Entenda a diferença entre os oráculos e descubra qual caminho responde ao momento que você está vivendo agora.</p>
+  <p class="byline">Por Tatiana Rocha — Mameto Nganga Musekedi</p>
+</header>
+
+<div class="wrap">
+  <section class="intro">
+    <p>Ao longo de mais de três décadas de estudo e prática nas tradições de matriz africana, atravessei diferentes sistemas oraculares. Alguns se tornaram parte do meu trabalho diário de consulta. Outros eu domino e ensino, mesmo sem usar no dia a dia. Outros eu não pratico, mas estudo e respeito profundamente, porque fazem parte do mesmo universo espiritual que atravessa minha trajetória.</p>
+    <p>Este guia nasceu para reunir esse conhecimento num só lugar: o que é cada oráculo, de onde vem, como funciona e para que tipo de pergunta ele serve melhor.</p>
+    <p class="thesis">Não existe um sistema "mais certo" que o outro. Existe o que responde ao momento que você está vivendo agora.</p>
+  </section>
+
+  <nav class="map">
+    <ul>
+      <li><a href="#taro">Tarô</a></li>
+      <li><a href="#merindilogum">Merindilogum</a></li>
+      <li><a href="#vititi">Vititi Ngombo</a></li>
+      <li><a href="#antigas">Oráculo das Antigas</a></li>
+      <li><a href="#cigano">Baralho Cigano</a></li>
+      <li><a href="#tabela">Comparar</a></li>
+      <li><a href="#faq">Perguntas</a></li>
+    </ul>
+  </nav>
+</div>
+
+<article class="oracle" id="taro">
+  <div class="wrap">
+    <div class="num">I</div>
+    <h2>Tarô</h2>
+    <p>Diferente do que muita gente pensa, o Tarô não nasceu como sistema místico ou ancestral: sua história documentada começa como jogo de salão. As primeiras cartas surgiram na Itália, no fim do século XIV, criadas como entretenimento para as cortes medievais. A estrutura que conhecemos hoje, com 78 cartas, 22 arcanos maiores e 56 arcanos menores, só se consolidou entre os séculos XVII e XVIII.</p>
+    <p>Foi só no fim do século XVIII que o Tarô passou a ser lido como ferramenta divinatória, quando ocultistas franceses o vincularam, sem evidência histórica real, ao Egito Antigo e à cabala. O baralho mais difundido no Brasil hoje, o Rider-Waite-Smith, é ainda mais recente: foi criado em 1909, em Londres.</p>
+    <p>O Tarô funciona como um grande orientador. Cada carta é o espelho de uma força ou momento, a Torre, o Enforcado, a Estrela, e a leitura revela padrões, possibilidades e dificuldades presentes na vida de quem consulta. A partir dela, é possível indicar trabalhos espirituais e procedimentos para reverter situações desafiadoras.</p>
+    <div class="voice">É o oráculo que me acompanha há mais tempo, desde os 18 anos, quando comecei a estudar sozinha, primeiro pelo Tarô de Marselha, o mais tradicional, depois me aproximando do Tarô Mitológico.</div>
+    <p class="note">É a consulta indicada para quem busca clareza sobre o momento atual, caminhos, decisões, padrões que se repetem, mesmo sem estar diante de uma situação crítica.</p>
+  </div>
+</article>
+
+<article class="oracle" id="merindilogum">
+  <div class="wrap">
+    <div class="num">II</div>
+    <h2>Merindilogum <span style="font-size:0.6em; opacity:0.7;">(jogo de búzios)</span></h2>
+    <p>O nome Merindilogum (ou Ẹ̀rìndínlógún) significa "dezesseis" em iorubá, referência aos dezesseis búzios usados no jogo. É, junto com a leitura por obi (a noz de cola), o oráculo mais antigo dos povos iorubás. Antes da chegada das conchas ao continente africano, esse sistema já existia através do obi. As conchas vieram depois, por serem mais duráveis, e o nome que originalmente designava o método de adivinhação passou a nomear as próprias conchas.</p>
+    <p>Sobre a origem das conchas em si, há divergência entre fontes: uma corrente aponta o Oriente Médio, outra as Ilhas Maldivas, de onde teriam sido trazidas à África Ocidental, funcionando inicialmente até como moeda de troca.</p>
+    <p>No Brasil, o sistema foi introduzido e aperfeiçoado por Bamgbose Obitikú (Rodolfo Martins de Andrade), para as ialorixás do Ilê Axé Iyá Nassô Oká, a Casa Branca do Engenho Velho, por volta de 1830, o terreiro mais antigo do Candomblé baiano. Hoje o Merindilogum tem mais de 70 caminhos e desdobramentos, e se espalhou por praticamente todas as nações do Candomblé brasileiro.</p>
+    <p>O sacerdote lança os dezesseis búzios sobre uma esteira ou mesa preparada, e a leitura se dá pela configuração de búzios abertos e fechados, que indica um Odu, o caminho oracular que orienta a resposta. Antes de jogar, saúda e evoca os Orixás, e é através da forma como os búzios caem que as divindades respondem às perguntas feitas.</p>
+    <p>Nasceu no Candomblé, religião formada na diáspora africana. Quem responde ali são os próprios Orixás.</p>
+    <p class="note">Não é um oráculo que pratico pessoalmente, mas reconheço sua profundidade e importância dentro da tradição, e por isso ele integra este guia.</p>
+  </div>
+</article>
+
+<article class="oracle" id="vititi">
+  <div class="wrap">
+    <div class="num">III</div>
+    <h2>Vititi Ngombo</h2>
+    <p>A leitura de ossos, ou osteomancia, é uma prática ancestral presente em culturas de todo o mundo, do Sangoma sul-africano à leitura de cascos de tartaruga na China antiga. Dentro do universo bantu, essa tradição toma a forma do Ngombo, sistema de adivinhação conduzido por sacerdotes especializados. É dessa linhagem que vem o Vititi Ngombo, preservado na tradição da Quimbanda Congo, na qual sou iniciada.</p>
+    <p>O acesso a esse oráculo é restrito: só quem é iniciado na Quimbanda Congo pode jogá-lo. Também chamado de oráculo dos ossos, é indicado quando a pessoa já percebeu que sua situação é desafiadora e precisa de intervenção imediata.</p>
+    <p>Nele se manifestam os Nkises, divindades do povo bantu que atuam no jogo como medicinas, indicando os procedimentos espirituais necessários para reverter cada situação. A leitura abrange cinco pilares da vida: saúde, espiritualidade, relacionamentos, trabalho e finanças.</p>
+    <div class="voice">É também um oráculo que conversa diretamente com Exu e Pombagira, permitindo identificar quem são os espíritos que guardam os caminhos de quem consulta, e orientando como cultuá-los.</div>
+  </div>
+</article>
+
+<article class="oracle" id="antigas">
+  <div class="wrap">
+    <div class="num">IV</div>
+    <h2>Oráculo das Antigas</h2>
+    <p>Existe um tipo de resposta que só vem quando a pergunta é feita da forma certa, para as vozes certas. Foi essa busca que me levou a criar o Oráculo das Antigas: depois de décadas caminhando dentro das tradições de matriz africana, senti falta de um oráculo que falasse a língua exata do meu caminho, um sistema onde as divindades iorubás e as entidades brasileiras de Umbanda pudessem, juntas, dizer o que precisa ser dito.</p>
+    <p>Não nasceu rápido. Foram meses de trabalho intenso, carta por carta, cada uma construída sobre décadas de vivência espiritual, até que o oráculo ganhasse a força que tem hoje. Dezesseis divindades femininas iorubás e dez entidades femininas de Umbanda, vinte e seis presenças que, juntas, formam um dos mapeamentos mais completos que já criei.</p>
+    <p>Chamo de "das Antigas" porque é isso que essas vozes são: antigas, ancestrais, presentes desde antes de qualquer pergunta que a gente possa fazer hoje. Mulheres, de um lado e de outro do véu, que já atravessaram tudo o que atravessamos, e por isso sabem exatamente onde estão os nós que a gente ainda não consegue ver sozinha.</p>
+    <p>A leitura acontece numa mesa de dezesseis cartas, dispostas em quatro linhas e quatro colunas, um desenho que permite enxergar, de uma vez só, todos os assuntos que pesam na vida de quem consulta: dinheiro, sorte, afeto, mas também o propósito mais fundo, o caminho que a alma veio fazer aqui. Não é um oráculo de resposta rápida. É um mapa da vida inteira, lido em uma só sentada.</p>
+    <div class="voice">Muita gente que já jogou o Oráculo das Antigas comigo diz a mesma coisa depois: que se reconheceu ali, de um jeito que nenhum outro oráculo tinha conseguido antes. Talvez porque essas vozes sejam, também, femininas. Talvez porque sejam antigas o bastante para já terem visto tudo isso antes.</div>
+  </div>
+</article>
+
+<article class="oracle" id="cigano">
+  <div class="wrap">
+    <div class="num">V</div>
+    <h2>Baralho Cigano</h2>
+    <p>Apesar do nome, o Baralho Cigano não nasceu na cultura cigana. Sua origem está no Jogo da Esperança, criado na Alemanha em 1799. Décadas depois, editoras passaram a comercializar baralhos de 36 cartas associados ao nome de Marie Anne Lenormand, cartomante francesa famosa na época de Napoleão, mesmo sem evidência de que ela tivesse criado esse sistema. Foi assim que o baralho passou a ser chamado de Lenormand.</p>
+    <p>O apelido "cigano" veio por um caminho cultural, não histórico. Ao longo do século XIX, a imagem do "cigano que lê o futuro" era muito forte no imaginário europeu, e qualquer prática de adivinhação acabava associada a esse povo. Comunidades ciganas de fato adotaram o Lenormand em suas leituras, o que reforçou a associação, mas não porque o tivessem criado. No Brasil, o baralho ganhou adaptações culturais próprias, dando origem ao que se chama hoje de tradição brasileira do Baralho Cigano.</p>
+    <p>Diferente do Tarô, o Baralho Cigano trabalha com 36 cartas objetivas e diretas, ligadas a situações do cotidiano, não a arquétipos abstratos. A leitura se apoia na combinação entre cartas vizinhas, o que torna esse oráculo rápido, preciso e direto ao ponto.</p>
+    <div class="voice">Aprendi o Baralho Cigano depois da morte da minha mãe, em 2015. Ela jogava, e foi o baralho que herdei dela. Quando jovem eu já sabia Tarô, por isso nunca tinha me interessado por esse sistema, mas depois que ela partiu, decidi aprender. É o mesmo baralho que uso até hoje, um baralho cigano da tradição brasileira. Uso ele quando preciso de uma orientação mais direta, mais fofoqueira mesmo.</div>
+    <p class="note">Domino e ensino esse oráculo, mas não é um sistema que uso com frequência no meu dia a dia de consultas.</p>
+  </div>
+</article>
+
+<section class="table-wrap" id="tabela">
+  <div class="wrap">
+    <h2>Comparar em um olhar</h2>
+    <table class="compare">
+      <thead>
+        <tr>
+          <th>Oráculo</th>
+          <th>Origem</th>
+          <th>Melhor para</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name" data-label="Oráculo">Tarô</td>
+          <td data-label="Origem">Itália, século XIV</td>
+          <td data-label="Melhor para">Clareza sobre o momento e decisões</td>
+        </tr>
+        <tr>
+          <td class="name" data-label="Oráculo">Merindilogum</td>
+          <td data-label="Origem">Tradição iorubá / Candomblé</td>
+          <td data-label="Melhor para">Descobrir qual é o seu Orixá</td>
+        </tr>
+        <tr>
+          <td class="name" data-label="Oráculo">Vititi Ngombo</td>
+          <td data-label="Origem">Tradição bantu / Quimbanda Congo</td>
+          <td data-label="Melhor para">Situações complexas que exigem investigação espiritual e orientação de procedimentos</td>
+        </tr>
+        <tr>
+          <td class="name" data-label="Oráculo">Oráculo das Antigas</td>
+          <td data-label="Origem">Criação autoral baseada em mais de três décadas de estudo e prática nas tradições de matriz africana</td>
+          <td data-label="Melhor para">Mapeamento profundo da vida e do propósito</td>
+        </tr>
+        <tr>
+          <td class="name" data-label="Oráculo">Baralho Cigano</td>
+          <td data-label="Origem">Alemanha, século XVIII</td>
+          <td data-label="Melhor para">Respostas rápidas e objetivas do cotidiano</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>Qual oráculo indica meu Orixá?</summary>
+      <p>É o Merindilogum, o jogo de búzios, o sistema que investiga diretamente a relação da pessoa com seu Orixá e seus Odus.</p>
+    </details>
+
+    <details>
+      <summary>Posso fazer consulta com mais de um oráculo?</summary>
+      <p>Sim. Muitas vezes um oráculo complementa o outro. O Tarô, por exemplo, traz clareza sobre o momento, enquanto o Vititi Ngombo pode indicar a intervenção espiritual necessária.</p>
+    </details>
+
+    <details>
+      <summary>Quanto tempo dura uma consulta?</summary>
+      <p>As consultas têm entre 60 e 90 minutos, feitas de forma totalmente online, e abrangem os aspectos espiritual, afetivo, financeiro e profissional.</p>
+    </details>
+
+    <details>
+      <summary>Preciso saber qual oráculo escolher antes de marcar?</summary>
+      <p>Não. Se tiver dúvida, escreva contando o que está vivendo. A consulta certa costuma ficar clara depois dessa conversa.</p>
+    </details>
+
+    <details>
+      <summary>Todos esses oráculos estão disponíveis para consulta?</summary>
+      <p>Ofereço consultas com Tarô, Vititi Ngombo e Oráculo das Antigas. O Baralho Cigano eu domino e ensino, mas não faço consultas com ele no dia a dia. O Merindilogum não faz parte da minha prática, embora seja parte importante deste guia.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Se sentir o chamado</h2>
+    <p>Será um prazer te acompanhar nesse processo.</p>
+    <a class="btn-whats" href="https://wa.me/5519971552809" target="_blank" rel="noopener">Agendar consulta pelo WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  Tatiana Rocha · Casa das Antigas — escola de espiritualidade e saberes ancestrais
+</footer>
+
+</body>
+</html>
